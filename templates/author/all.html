@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}   About Author{% endblock title %}
+{% block Author %} active {% endblock Author %}
+{% block body %}  
+
+<div class="container my-3">
+{% for auth in author %}
+
+<br>
+<a href="{{auth.Slug}}">{{auth.Name}}</a><br>
+  
+{% endfor %}
+    </div>
+    
+
+    {%endblock body %}
