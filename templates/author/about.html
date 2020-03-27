@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}   About Author{% endblock title %}
+{% block About %} active {% endblock About %}
+{% block body %}  
+
+<div class="container my-3">
+
+<strong>{{author.Name}}</strong>
+<br>
+Age : {{author.age}}
+<br>
+Joined on : {{author:Joined}}
+<br>
+Read articles by <a href="{{author.slug}}" >{{author.Name}}</a>
+About:
+<br>
+<p>{{author:bio</p>
+
+
+</div>
+
+
+
+
+{% endblock body %}
+
